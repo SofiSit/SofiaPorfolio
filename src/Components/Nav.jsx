@@ -3,6 +3,7 @@ import Logo from "../assets/Logo.png";
 import { CiMenuFries } from "react-icons/ci";
 import { FaTimes } from "react-icons/fa";
 import { useState } from "react";
+import StarsCanvas from "./canvas/Stars";
 
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,10 +14,11 @@ const Nav = () => {
 
   return (
     <nav>
-      <div className="h-10v flex justify-between z-50 text-white lg:py-5 px-20 py-4">
+      <div className="h-10v flex justify-between z-50 text-white lg:py-5 px-20 py-4 border-b border-slate-950">
+      <StarsCanvas/>
         <div className="flex items-center flex-1">
           <img
-            className="object-contain hover:animate-bounce h-80 w-80"
+            className="object-contain animate-bounce h-80 w-80"
             src={Logo}
             alt="Logo image"
           />
@@ -29,11 +31,11 @@ const Nav = () => {
             <Link spy={true} smooth={true} to="About">
               <li className="hover:text-pink-500 transition animate-pulse border-b-2 border-slate-900 hover:border-pink-500 cursor-pointer">About</li>
             </Link> 
+            <Link spy={true} smooth={true} to="tech">
+              <li className="hover:text-pink-500 transition animate-pulse border-b-2 border-slate-900 hover:border-pink-500 cursor-pointer">Technologies</li>
+            </Link> 
             <Link spy={true} smooth={true} to="Projects">
               <li className="hover:text-pink-500 transition animate-pulse border-b-2 border-slate-900 hover:border-pink-500 cursor-pointer">Projects</li>
-            </Link> 
-            <Link spy={true} smooth={true} to="Services">
-              <li className="hover:text-pink-500 transition animate-pulse border-b-2 border-slate-900 hover:border-pink-500 cursor-pointer">Services</li>
             </Link> 
             <Link spy={true} smooth={true} to="Contact">
               <li className="hover:text-pink-500 transition animate-pulse border-b-2 border-slate-900 hover:border-pink-500 cursor-pointer">Contact</li>

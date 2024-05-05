@@ -1,26 +1,36 @@
-import React from 'react'
-import { AiFillGithub } from 'react-icons/ai'
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const Banner = () => {
-  return (
-    <div className='lg:px-56 px-10 lg:py-0 py-20 text-center gap-5 lg-text-start flexlg:flex-row flex-col-reverse justify-between lg_gap-28 items-center'>
-        <div className='h-full lg:py-40 flex flex-col justify-center lg:items-start items-center text-white'>
-            <h1 className='text-[52px] font-semibold mb-8 leading-normal'>Welcome to <span className='text-pink-500'>my website!</span> </h1>
-            <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-            <div className='flex mt-8 gap-2'>
-                <div className='flex items-center justify-center'>
-                    <div className='flex space-x-2 '>
-                        <a href="" className='text-pink-500 hover:text-pink-300 rounded-fulll glow p-2'>
-                            <AiFillGithub className='text-[28px]'/>
-                        </a>
-                    </div>
+    useEffect(() => {
+    AOS.init({
+        easing: "ease-out-quart",
+        duration: 750,
+        delay: 0
+    })},[])
 
+    return (
+        <div className='lg:px-56 px-10 lg:py-0 py-20 text-center lg:text-center lg-text-center flex justify-center   items-center'>
+            <div data-aos="fade-up" className='h-full lg:py-40 flex flex-col justify-center items-center text-white'>
+                <h1 className='text-[52px] font-semibold mb-8 leading-normal uppercase'>Welcome to <span className='text-pink-500'>my website!</span> </h1>
+                <p className="lg:text-center">"I'm Sofi! Full-Stack developer who enjoys providing solutions using HTML, CSS, JavaScript, Node.js, Express, React,MongoDB and SQL. I am focused on being a valued member of the team, delivering thoughtful solutions and continually improving my skills."</p>
+                <div className='flex mt-8 gap-2'>
+                    <div className='flex items-center justify-center'>
+                        <div className='flex space-x-2 '>
+                            <a href="https://github.com/SofiSit" className='text-pink-500 hover:text-pink-300 glow rounded-full glow p-2'>
+                                <AiFillGithub className='text-[28px]  ' />
+                            </a>
+                            <a href="https://www.linkedin.com/in/sofia-sitjar/" className='text-pink-500 hover:text-pink-300 glow rounded-full glow p-2'>
+                                <AiFillLinkedin className='text-[28px] ' />
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-  )
+    )
 }
 
-export default Banner
+export default Banner;

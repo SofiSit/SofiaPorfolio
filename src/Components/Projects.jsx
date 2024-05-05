@@ -1,7 +1,17 @@
 
 const Projects = () => {
   return (
-    <div>Projects</div>
+    <div>
+      <h1>Projects</h1>
+      <div>
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+      </div>
+    </div>
   )
 }
 
