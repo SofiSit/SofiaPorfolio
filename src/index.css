@@ -6,10 +6,10 @@
     transition: all 0.3s ease-in-out;
 }
 .glow:hover {
-    box-shadow: 0 0 25px rgb(234, 210, 232)
+    box-shadow: 0 0 25px rgb(247, 145, 238)
 }
 .img_glow {
-    box-shadow: 0 0 55px rgb(87, 32, 83);
+    box-shadow: 0 0 55px rgb(233, 139, 227);
 }
 .neno-button {
     transition: all 0.3s ease-in-out;
@@ -20,4 +20,63 @@
 .b-glow{
     box-shadow: 0 0 25px rgb(234, 210, 232)
 }
+.container-work{
+    animation:  glow 2s ease-in-out infinite;
+ }
+ 
+     @keyframes glow{
+       0%, 100%{
+           color: hsl(300, 23%, 97%);
+           text-shadow: 0 0 12px rgb(179, 0, 255), 0 0 50px rgb(179, 0, 255), 0 0 100px rgb(179, 0, 255);
+       }
+       10%, 90%{
+           color: #ff05ff44;
+           text-shadow: none;
+       }
+   }
+   @keyframes back{
+    100%{
+        background-position: 8000px 0;
+    }
+ }
+ .bubbles{
+    display: flex;
+    z-index: 0;
+    max-width: 100%;
+  }
+  .bubbles span{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(252, 82, 252);
+    margin: 0 40px;
+    border-radius:  50%;
+    box-shadow: 0 0 10px rgb(243, 115, 238),
+    0 0 50px rgba(248, 154, 245, 0.94),
+    0 0 100px rgba(247, 155, 244, 0.999);
+    animation: animatelights 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+    animation-fill-mode: both;
+  }
+  .bubbles span:nth-child(even){
+    background-color: rgba(169, 63, 249, 0.993);
+    box-shadow: 0 0 10px rgba(169, 41, 254, 0.993),
+    50px 50px 50px rgba(200, 133, 251, 0.993),
+    0 0 100px rgba(202, 145, 245, 0.993);
+  }
+  @keyframes animatelights
+  {
+      0%
+      {
+      transform: translateY(100vh) scale(0)
+      }
+      100%{
+          transform: translateY(0) scale(1);
+      }
+  } 
+  .active {
+    color: rgb(247, 48, 141); /* Cambia el color del texto cuando está activo */
+    border-color: #ff007f; /* Cambia el color de la línea inferior cuando está activo */
+  }
+
    
