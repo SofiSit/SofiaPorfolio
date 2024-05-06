@@ -37,9 +37,6 @@ const Nav = () => {
             <Link spy={true} smooth={true} to="work" activeClass="active">
               <li className="hover:text-pink-500 transition animate-pulse border-b-2 border-slate-900 hover:border-pink-500 cursor-pointer">Projects</li>
             </Link>
-            <Link spy={true} smooth={true} to="Contact" activeClass="active">
-              <li className="hover:text-pink-500 transition animate-pulse border-b-2 border-slate-900 hover:border-pink-500 cursor-pointer">Contact</li>
-            </Link>
           </ul>
         </div>
         <div>
@@ -63,9 +60,7 @@ const Nav = () => {
             <Link spy={true} smooth={true} to="work" activeClass="active">
               <li className="my-4 py-4 border-b border-salate-800 hover:bg-slate-800 hover:rounded text-white">Projects</li>
             </Link>
-            <Link spy={true} smooth={true} to="Contact" activeClass="active">
-              <li className="my-4 py-4 border-b border-salate-800 hover:bg-slate-800 hover:rounded text-white">Contact</li>
-            </Link>
+            
           </ul>
         </div>
       )}

@@ -1,23 +1,30 @@
+import React from 'react';
+import { AiFillGithub, AiFillLinkedin, AiFillPhone } from 'react-icons/ai';
+import StarsCanvas from './canvas/Stars';
 
 const Footer = () => {
-  return (
-    <div>
-      <div>
-        <span>LOGO</span>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente iste sequi placeat enim molestias omnis, reprehenderit quod iure, labore delectus cupiditate. Earum aperiam accusamus minima delectus aspernatur dicta sint necessitatibus!</p>
-      </div>
-      <div>
-        <h2>
-          <ul>
-            <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          </ul>
-        </h2>
-      </div>
-    </div>
-  )
+    return (
+        <footer className="text-white py-8 ">
+          <StarsCanvas/>
+            <div className="container mx-auto flex justify-center items-center">
+                <div className="flex flex-col items-center justify-center space-y-4">
+                    <p className="text-lg">¡Contáctame!</p>
+                    <div className="flex space-x-2">
+                        <a href="https://github.com/SofiSit" target="_blank" className="text-pink-500 hover:text-pink-300">
+                            <AiFillGithub className="text-[28px]" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/sofia-sitjar/" target="_blank" className="text-pink-500 hover:text-pink-300">
+                            <AiFillLinkedin className="text-[28px]" />
+                        </a>
+                        <a href="https://wa.me/673058712" target="_blank" className="text-pink-500 hover:text-pink-300">
+                            <AiFillPhone className="text-[28px]" />
+                        </a>
+                    </div>
+                    <p className="text-sm">© {new Date().getFullYear()} SofiSit - Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </footer>
+    );
 }
 
-export default Footer
+export default Footer;

@@ -17,7 +17,7 @@ skills.</p>
             <div className='flex mt-8 gap-2'>
                 <div className='flex items-center justify-center'>
                 <a href={cvPDF} target="_blank" rel="noopener noreferrer">
-              <button className='neno-button animate-pulse shadow-xl hover:shadow-pink-200/50 text-pink-500 border-2 hover:bg-pink-500 border-with rounded-lg py-4 px-8 uppercase relative overflow-hidden'>CV</button>
+              <button className='neno-button animate-pulse shadow-xl hover:shadow-pink-200/50 text-white border-2 hover:bg-pink-500 border-with rounded-lg py-4 px-8 uppercase relative overflow-hidden'>CV</button>
             </a>
                 </div>
             </div>
