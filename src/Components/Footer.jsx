@@ -1,11 +1,9 @@
 import React from 'react';
 import { AiFillGithub, AiFillLinkedin, AiFillPhone } from 'react-icons/ai';
-import StarsCanvas from './canvas/Stars';
 
 const Footer = () => {
     return (
         <footer className="text-white py-8 ">
-          <StarsCanvas/>
             <div className="container mx-auto flex justify-center items-center">
                 <div className="flex flex-col items-center justify-center space-y-4">
                     <p className="text-lg">¡Contáctame!</p>
