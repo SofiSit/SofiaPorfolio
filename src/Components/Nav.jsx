@@ -18,12 +18,12 @@ const Nav = () => {
         <StarsCanvas />
         <div className="flex items-center flex-1">
           <img
-            className="object-contain animate-bounce h-80 w-80"
+            className="object-contain h-96 w-96"
             src={Logo}
             alt="Logo image"
           />
         </div>
-        <div className="lg:flex md:flex lg:flex-1 items-center justify-end font-normal hidden">
+        <div className="lg:flex md:flex lg:flex-1 items-center font-bold justify-end uppercase hidden">
           <ul className="flex gap-8 mr-16 text-[28px]">
             <Link spy={true} smooth={true} to="Home" activeClass="active">
               <li className="hover:text-pink-500 transition animate-pulse border-b-2 border-slate-900 hover:border-pink-600 cursor-pointer">Home</li>
